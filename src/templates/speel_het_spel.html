@@ -1,0 +1,25 @@
+<title>Speel het spel</title>
+        	 	<link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+        	 	<link rel="stylesheet" href="static/bootstrap-theme.min.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="container">
+    <h2>Klik op de actie die je wilt doen</h2>
+    <form action="" method="post" role="form">
+        <input type="submit" name="submit_button" value="Nieuw woord">
+        <input type="submit" name="submit_button" value="Nieuwe beurt">
+        <input type="submit" name="submit_button" value="Nieuwe ronde">
+        <input type="submit" name="submit_button" value="Tussenstand">
+
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+</div>
