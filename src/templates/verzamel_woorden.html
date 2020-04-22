@@ -1,0 +1,27 @@
+<title>Setup van het spel</title>
+        	 	<link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+        	 	<link rel="stylesheet" href="static/bootstrap-theme.min.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="container">
+    <h2>Typ een voor een de woorden die je wilt toevoegen.</h2>
+    <form action="" method="post" role="form">
+    <div class="form-group">
+          <label for="name">Woord:</label>
+        <input type="text" class="form-control" id="woord_in_hoed" name="woord_in_hoed" placeholder="Welk moet in de hoed?">
+    </div>
+
+    <button type="submit" class="btn btn-success">Voeg toe!</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+</div>
