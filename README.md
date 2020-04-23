@@ -12,11 +12,15 @@ http://127.0.0.1:5000/voeg_woorden_toe
 
 Per keer een kaartje toevoegen. Wijst zich vanzelf.
 
+![woord](src/images/voeg_toe.PNG)
+
 ## Speel het spel
 Om het spel te spelen, ga je naar:
 http://127.0.0.1:5000/speel_het_spel
 
 De buttons spreken waarschijnlijk voor zich.
+
+![speel](src/images/speel.PNG)
 
 Fases in het spel:
 * Ronde --> Alle kaartjes terug in hoed, opnieuw beginnen met legen.
